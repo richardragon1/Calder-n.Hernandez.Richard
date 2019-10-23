@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\title { modulacion de ancho de pulso con amp y transistores }
+\author{Calderon Hernandez Richard}
+\date{22/octubre/2019}
+
+\begin{document}
+
+\maketitle
+
+\section{¿Qué es PWM?}
+La modulación por ancho de pulso o PWM (Pulse Width Modulation) se usa para controlar el ancho de una señal digital con el propósito de controlar a su vez la potencia que se entrega a ciertos dispositivos. Modificando el ancho del pulso activo (que está en On) se controla la cantidad de corriente que fluye hacia el dispositivo.
+\section{¿Cómo funciona un PWM?}
+Un PWM funciona como un interruptor, que constantemente se activa y desactiva, regulando la cantidad de corriente y por ende de potencia, que se entrega al dispositivo que se desea controlar. Éstos dispositivos pueden ser motores CC o fuentes de luz en CC, entre otros.
+Si un motor es alimentado con 12 voltios, recibe todo el tiempo la corriente que este pide y entrega la máxima potencia, si es alimentado con 0 voltios, no recibe corriente y no obtiene potencia.
+En un sistema PWM el motor recibe corriente por un tiempo y deja de recibirlo por otro, repitiéndose este proceso continuamente. Si se aumenta el tiempo en que el pulso está en nivel alto (12 V en nuestro ejemplo), se entrega más potencia y si se reduce el tiempo entrega menos potencia.
+
+Si el ciclo de trabajo es de 0% significa que no hay tiempo con pulso en nivel alto y el motor está apagado.
+Si el ciclo de trabajo es de 25% significa que el 25% del tiempo el pulso está en nivel alto y el 75% en nivel bajo.
+Si el ciclo de trabajo es de 50% el tiempo que el voltaje está en bajo es igual al que está en alto.
+Si el ciclo de trabajo es de 100%, significa que el pulso está todo el tiempo en nivel alto. Esto causa que el motor esté trabajando al máximo porque recibe corriente todo el tiempo.
+\section{¿Qué ventajas tiene la modulación por ancho de pulso?}
+La principal ventaja es la eficiencia energética. El circuito que tenga este método de control, entrega a la carga una cantidad de potencia que es proporcional a la potencia que necesita para realizar su trabajo.
+Si se necesita aumentar la velocidad de un motor se incrementa la potencia que se le entrega (ciclo de trabajo mayor)
+Si se necesita disminuir la velocidad de un motor se disminuye la potencia que se le entrega. (ciclo de trabajo menor)
+\section{¿Que aplicaciones tiene el PWM?}
+Controles de velocidad variables para motores CC
+Dimmers para sistemas de iluminación con LEDs
+
+\end{document}
